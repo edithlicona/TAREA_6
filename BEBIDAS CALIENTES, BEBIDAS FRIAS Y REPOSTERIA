@@ -1,0 +1,72 @@
+{
+	int opcion = 0;
+	
+	while(true)
+	{
+		system("cls");
+		
+		cout << "****";
+		cout << "MENU";
+		cout << "****";
+		
+		cout << endl;
+		cout << endl;
+		
+		cout << "1 - Bebidas Calientes" << endl;
+		cout << "2 - Bebidas FRIAS" << endl;
+		cout << "3 - Reposteria" << endl;
+		cout << "4 - Imprimir Factura" << endl;
+		cout << "0 - Salir" << endl;
+		
+		cout << endl;
+		cout <<"Ingrese una opcion entre 1 - 3: ";
+		cin >> opcion;
+		
+		if (opcion == 0)
+		{
+			break;
+		}
+		
+		
+		if (opcion == 4)
+		{
+			system("cls");
+			cout << "****************" << endl;
+			cout << "BEBIDAS HELADAS" << endl;
+			cout << "****************" << endl;			
+			system("pause");	
+		}
+		if (opcion == 2)
+		{
+			system("cls");
+		    cout << "****************" << endl;
+			cout << "BEBIDAS FRIAS"  << endl;
+			cout << "****************" << endl;			
+			system("pause");
+		}
+		if (opcion == 3)
+		{
+			system("cls");
+			cout << "**********" <<endl;
+			cout << "REPOSTERIA" << endl;
+			cout << "**********" << endl;
+			system("pause");
+		}
+		if (opcion < 0 || opcion > 3) {
+			system("cls");
+			cout << "Ingrese una opcion valida" << endl;
+			system("pause");
+			
+		}
+		if (opcion == 4)
+		{
+			system("cls");
+			cout << "****************" <<endl;
+			cout << "IMPRIMIR FACTURA" << endl;
+			cout << "****************" << endl;
+			system("pause");
+		}
+	}
+
+	return 0;
+}
