@@ -1,0 +1,135 @@
+{
+	int opcion = 0;
+	
+	while(true)
+	{
+		system("cls");
+		
+		cout << "****";
+		cout << "PRODUCTOS";
+		cout << "****";
+		
+		cout << endl;
+		cout << endl;
+
+  case 1:
+ {
+     cout <<"BEBIDAS CALIENTES" << endl;
+     cout <<"*************" << endl;
+     system("pause");
+     break;
+ cout << "1 - Capuccino" << endl;
+ cout << "2 - Expresso" << endl;
+ cout << "3 - Granita" << endl;
+ cout  << endl;
+
+ cout <<"Ingrese una opcion: ";
+ cin >> opcionProducto;
+
+ switch (opcionProducto)
+ {
+ case 1:
+  agregarProducto("1 capuccino -- L 50.00", 1, 50);
+  break;
+ case 2:
+  agregarProducto("1 Expresso - L 30.00", 1, 30);
+  break;
+ case 3:
+  agregarProducto("1 Granita - L 60.00", 1, 60);
+  break;
+ default:
+   {
+      cout << "opcion no valida";
+      return;
+      break;
+   }
+ }
+
+ cout << endl;
+ cout << "Producto agregado" << endl << endl;
+ system("pause");
+
+ break;
+ }
+ case 2:
+ {
+    cout <<"BEBIDAS FRIAS" << endl;
+    cout <<"*************" << endl;
+    system("pause");
+    break;
+ cout << "1 - Refresco" << endl;
+ cout << "2 - Te frio" << endl;
+ cout << "3 - Piña Colada" << endl;
+ cout  << endl;
+
+ cout <<"Ingrese una opcion: ";
+ cin >> opcionProducto;
+
+  switch (opcionProducto)
+ {
+ case 1:
+  agregarProducto("2 Refresco -- L 20.00", 1, 20);
+  break;
+ case 2:
+  agregarProducto("2 Te Frio - L 25.00", 1, 25);
+  break;
+ case 3:
+  agregarProducto("2 Piña Colada - L 60.00", 1, 60);
+  break;
+ default:
+   {
+      cout << "opcion no valida";
+      return;
+      break;
+   }
+ }
+
+ cout << endl;
+ cout << "Producto agregado" << endl << endl;
+ system("pause");
+
+ break;
+ }
+ case 3:
+ {
+    cout << "REPOSTERIA" << endl;
+    cout << "**********" << endl;
+    system("pause");
+    break;
+ }
+ cout << "1 - Pan Frances" << endl;
+ cout << "2 - Semitas" << endl;
+ cout << "3 - Cheesecake" << endl;
+ cout  << endl;
+
+ cout <<"Ingrese una opcion: ";
+ cin >> opcionProducto;
+
+ switch (opcionProducto)
+ {
+ case 1:
+  agregarProducto("1 Pan Frances -- L 7.00", 1, 7);
+  break;
+ case 2:
+  agregarProducto("1 Semitas - L 15.00", 1, 15);
+  break;
+ case 3:
+  agregarProducto("1 Cheesecake - L 70.00", 1, 70);
+  break;
+ default:
+   {
+      cout << "opcion no valida";
+      return;
+      break;
+   }
+ }
+
+ cout << endl;
+ cout << "Producto agregado" << endl << endl;
+ system("pause");
+
+  break;
+ default:
+     break:
+  }
+}
